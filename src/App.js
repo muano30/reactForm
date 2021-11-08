@@ -34,7 +34,7 @@ const handleSubmit = (e) => {
                 {list.map((item) => {
                     return(
                     <li>
-                        <h2>{formInfo.name}</h2>
+                        <h2>{item.name}</h2>
                     </li>)
                 })}     
             </ul>
