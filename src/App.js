@@ -15,6 +15,7 @@ const handleChange = (e) => {
 const handleSubmit = (e) => {
     e.preventDefault();
     setList([...list, formInfo])
+    setFormInfo({name:''})
 };
 
     return(
@@ -27,7 +28,7 @@ const handleSubmit = (e) => {
                 name = "name" 
                 value={formInfo.name}
                 />
-                <button type="submit">Submit</button>
+                <button type="submit">Submit</button>  
             </form>
 
             <ul>
